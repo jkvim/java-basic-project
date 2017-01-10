@@ -7,18 +7,22 @@ import static org.fest.assertions.api.Assertions.assertThat;
  */
 public class FizzBuzzTest {
     @Test
-    public void test_getcode_should_return_1_given_1() {
+    public void test_getcode_should_return_string_of_given_number() {
         assertThat(FizzBuzz.getCode(1)).isEqualTo("1");
+        assertThat(FizzBuzz.getCode(2)).isEqualTo("2");
+        assertThat(FizzBuzz.getCode(13)).isEqualTo("13");
     }
 
     @Test
-    public void test_getcode_should_return_fizz_given_3() {
+    public void test_getcode_should_return_fizz() {
         assertThat(FizzBuzz.getCode(3)).isEqualTo("Fizz");
+        assertThat(FizzBuzz.getCode(6)).isEqualTo("Fizz");
     }
 
     @Test
-    public void test_getcode_should_return_buzz_given_5() {
+    public void test_getcode_should_return_buzz() {
         assertThat(FizzBuzz.getCode(5)).isEqualTo("Buzz");
+        assertThat(FizzBuzz.getCode(10)).isEqualTo("Buzz");
     }
 
 }
