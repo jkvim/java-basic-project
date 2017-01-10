@@ -3,6 +3,10 @@
  */
 class FizzBuzz {
     static String getCode(int number) {
+        if (number % 3 == 0) {
+            return "Fizz";
+
+        }
         return number + "";
     }
 }

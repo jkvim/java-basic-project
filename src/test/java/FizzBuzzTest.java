@@ -10,4 +10,10 @@ public class FizzBuzzTest {
     public void test_getcode_should_return_1_given_1() {
         assertThat(FizzBuzz.getCode(1)).isEqualTo("1");
     }
+
+    @Test
+    public void test_getcode_should_return_fizz_given_3() {
+        assertThat(FizzBuzz.getCode(3)).isEqualTo("Fizz");
+    }
+
 }
