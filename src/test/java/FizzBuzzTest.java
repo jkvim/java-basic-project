@@ -16,4 +16,9 @@ public class FizzBuzzTest {
         assertThat(FizzBuzz.getCode(3)).isEqualTo("Fizz");
     }
 
+    @Test
+    public void test_getcode_should_return_buzz_given_5() {
+        assertThat(FizzBuzz.getCode(5)).isEqualTo("Buzz");
+    }
+
 }
