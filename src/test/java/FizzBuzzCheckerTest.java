@@ -17,4 +17,9 @@ public class FizzBuzzCheckerTest {
         assertThat(FizzBuzzChecker.isBuzz(2)).isFalse();
         assertThat(FizzBuzzChecker.isBuzz(3)).isFalse();
     }
+
+    public void test_isBuzz_should_return_true() {
+        assertThat(FizzBuzzChecker.isBuzz(5)).isTrue();
+        assertThat(FizzBuzzChecker.isBuzz(10)).isTrue();
+    }
 }
